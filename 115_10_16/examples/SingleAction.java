@@ -1,8 +1,8 @@
 public class SingleAction {
     public static void main(String[] args) {
-        int energy = 6;
+        int energy = 10;
         int samples = 0;
-        int command = 1;
+        int command = 9;
         // 先固定指令，將「分派行動」與稍後的輸入操作分開學。
         switch (command) {
             case 1:

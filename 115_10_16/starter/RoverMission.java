@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class RoverMission {
@@ -17,16 +18,30 @@ public class RoverMission {
             int command = input.nextInt();
             switch (command) {
                 case 1:
-                    // TODO D1：足夠能源才扣 6、加 2 份樣本並計次；不足只提示。
-                    System.out.println("TODO_EXPLORE");
+                    if (energy >= 6) {
+                        energy -= 6;
+                        samples += 2;
+                        actionCount++;
+                    } else {
+                        System.out.println("NOT_ENOUGH_ENERGY");
+                    }
                     break;
                 case 2:
-                    // TODO D2：掃描成本 2、樣本加 1；只有成功行動才計次。
-                    System.out.println("TODO_SCAN");
+                    if (energy >= 2) {
+                        energy -= 2;
+                        samples += 1;
+                        actionCount++;
+                    } else {
+                        System.out.println("NOT_ENOUGH_ENERGY");
+                    }
                     break;
                 case 3:
-                    // TODO D3：未滿電才加 5，封頂 20；滿電不計次。
-                    System.out.println("TODO_CHARGE");
+                    if (energy < 20) {
+                        energy = Math.min(20, energy + 5);
+                        actionCount++;
+                    } else {
+                        System.out.println("FULL_ENERGY");
+                    }
                     break;
                 case 0:
                     // break 只離開 switch，旗標讓下一次 while 判斷停止。
