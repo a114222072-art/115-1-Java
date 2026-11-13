@@ -7,9 +7,9 @@
 ## A｜取回與先備診斷（10 分鐘）
 
 1. 無 repo 時 clone，有副本先保存再 Fetch/Pull；在 115_1_Java/YYYY_MM_DD 建 java-04/src。
-2. 放五個核心 examples 與 starter/MissionLog.java，勿放 teacher 同名類別；日期下放本報告及 AI_USAGE。
+2. 放五個核心 examples 與 starter/MissionLog.MissionLog.java，勿放 teacher 同名類別；日期下放本報告及 AI_USAGE。
 3. 執行 java -version、javac -version，寫下完整版本：待填。不限定特定 JDK 版本。
-4. 在 java-04 編譯 `javac -encoding UTF-8 -d out src/*.java`；成功後跑 MissionLog。此時能跑任務但日誌與摘要未完成，是預期起始狀態。
+4. 在 java-04 編譯 `javac -encoding UTF-8 -d out src/*.java`；成功後跑 MissionLog.MissionLog。此時能跑任務但日誌與摘要未完成，是預期起始狀態。
 
 診斷：第三週 {1,1,2} 的最終能源/樣本/成功行動次數：待填。{2,1,1} 是否相同：待填。只有最終三個數字，能否分辨路線：待填。
 
@@ -126,7 +126,7 @@ int 放入清單會裝箱，讀成 int 會拆箱；ArrayList<int> 為何不能�
 
 目的：把剛才實作的日誌轉成清楚的資料需求，作為判斷 AI 建議是否適合的依據。
 
-先填下表，再自行組成可直接提問的一段 Prompt。接著用這份需求判讀下方兩個模擬建議。沿用原本的 MissionLog，本段產出為一段 Prompt 與兩項判斷；真實 AI 服務可選。
+先填下表，再自行組成可直接提問的一段 Prompt。接著用這份需求判讀下方兩個模擬建議。沿用原本的 MissionLog.MissionLog，本段產出為一段 Prompt 與兩項判斷；真實 AI 服務可選。
 
 | 要交代的需求 | 本人的內容 |
 |---|---|
@@ -178,7 +178,7 @@ int 放入清單會裝箱，讀成 int 會拆箱；ArrayList<int> 為何不能�
 
 - 恢復預設腳本，重新編譯執行；LAB_REPORT、AI_USAGE、專案 README 完成。
 - commit、push，核對 GitHub main 最新 commit 與來源檔。只 commit 或 Changes 空白不代表已推送。
-- 在另一位置 clone，同一專案重新編譯並跑 MissionLog；課堂不足可課後完成。
+- 在另一位置 clone，同一專案重新編譯並跑 MissionLog.MissionLog；課堂不足可課後完成。
 
 GitHub repo/作業目錄：待填；最終 commit：待填。
 本人新副本 JDK/編譯/預設輸出：待填，未做標示待補。

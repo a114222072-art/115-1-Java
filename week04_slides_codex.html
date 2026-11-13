@@ -264,8 +264,8 @@ section .slide-ref code { font-size: inherit; background: none; padding: 0; }
 section.lead .slide-ref { color: #c9dce8; }
 ;" data-marpit-pagination-total="38" data-size="16:9">
 <h2 id="%E4%BB%8A%E5%A4%A9%E7%9A%84%E6%88%90%E6%9E%9C">今天的成果</h2>
-<p class="slide-ref" data-slide="3">對應程式：<code>starter/MissionLog.java</code></p>
-<p>完成能回放每一步的 MissionLog，並說明資料結構選擇的理由。</p>
+<p class="slide-ref" data-slide="3">對應程式：<code>starter/MissionLog.MissionLog.java</code></p>
+<p>完成能回放每一步的 MissionLog.MissionLog，並說明資料結構選擇的理由。</p>
 <ul>
 <li>用陣列保存固定腳本與四種指令計數。</li>
 <li>用 ArrayList 保存每一步的指令、能源、結果。</li>
@@ -453,15 +453,15 @@ section .slide-ref code { font-size: inherit; background: none; padding: 0; }
 section.lead .slide-ref { color: #c9dce8; }
 ;" data-marpit-pagination-total="38" data-size="16:9">
 <h2 id="a%E5%8F%96%E5%9B%9E%E8%88%87%E5%B0%88%E6%A1%88%E6%BA%96%E5%82%99">A｜取回與專案準備</h2>
-<p class="slide-ref" data-slide="5">對應程式：<code>starter/MissionLog.java</code></p>
+<p class="slide-ref" data-slide="5">對應程式：<code>starter/MissionLog.MissionLog.java</code></p>
 <ol>
 <li>無 repo 時 clone；已有副本先保存再 Fetch/Pull。</li>
 <li>建立 YYYY_MM_DD/java-04/src。</li>
-<li>放五個核心範例與 starter 的 MissionLog。</li>
+<li>放五個核心範例與 starter 的 MissionLog.MissionLog。</li>
 <li>LAB_REPORT、AI_USAGE 放日期下。</li>
 </ol>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-powershell">javac <span class="hljs-literal">-encoding</span> UTF<span class="hljs-literal">-8</span> <span class="hljs-literal">-d</span> out src/*.java
-java <span class="hljs-literal">-cp</span> out MissionLog
+java <span class="hljs-literal">-cp</span> out MissionLog.MissionLog
 </code></pre>
 <p>JDK 不鎖定版本；記錄 java / javac 實際版本。</p>
 <footer>物件導向程式設計｜Week 04</footer>
@@ -569,7 +569,7 @@ section.lead .slide-ref { color: #c9dce8; }
 <td>F：摘要與排序</td>
 </tr>
 <tr>
-<td><code>starter/MissionLog.java</code></td>
+<td><code>starter/MissionLog.MissionLog.java</code></td>
 <td>E、F：五個 TODO</td>
 </tr>
 </tbody>
@@ -1431,7 +1431,7 @@ section .slide-ref code { font-size: inherit; background: none; padding: 0; }
 section.lead .slide-ref { color: #c9dce8; }
 ;" data-marpit-pagination-total="38" data-size="16:9">
 <h2 id="%E8%85%B3%E6%9C%AC%E6%98%AF%E9%A0%90%E5%AE%9A%E6%8C%87%E4%BB%A4%E6%97%A5%E8%AA%8C%E8%A8%98%E9%8C%84%E5%AF%A6%E9%9A%9B%E9%81%8E%E7%A8%8B">腳本是預定指令，日誌記錄實際過程</h2>
-<p class="slide-ref" data-slide="16">對應程式：<code>starter/MissionLog.java</code></p>
+<p class="slide-ref" data-slide="16">對應程式：<code>starter/MissionLog.MissionLog.java</code></p>
 <p>例：從能源20、樣本0出發，腳本 <code>{1,1,1,1}</code> 代表四次探索。<br />
 每次取得2份樣本，第三次累積6份已達標，第四筆不讀取。</p>
 <p>只保存「已讀指令」時，兩種方式都能記錄這三步：</p>
@@ -1931,7 +1931,7 @@ section .slide-ref code { font-size: inherit; background: none; padding: 0; }
 section.lead .slide-ref { color: #c9dce8; }
 ;" data-marpit-pagination-total="38" data-size="16:9">
 <h2 id="e%E5%90%8C%E4%B8%80%E6%AD%A5%E7%9A%84%E4%B8%89%E6%A2%9D%E6%97%A5%E8%AA%8C">E｜同一步的三條日誌</h2>
-<p class="slide-ref" data-slide="21">對應程式：<code>starter/MissionLog.java</code></p>
+<p class="slide-ref" data-slide="21">對應程式：<code>starter/MissionLog.MissionLog.java</code></p>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-java"><span class="hljs-type">ArrayList</span>&lt;Integer&gt; <span class="hljs-variable">commandLog</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">ArrayList</span>&lt;&gt;();
 <span class="hljs-type">ArrayList</span>&lt;Integer&gt; <span class="hljs-variable">energyLog</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">ArrayList</span>&lt;&gt;();
 <span class="hljs-type">ArrayList</span>&lt;String&gt; <span class="hljs-variable">resultLog</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">ArrayList</span>&lt;&gt;();
@@ -2043,7 +2043,7 @@ section .slide-ref code { font-size: inherit; background: none; padding: 0; }
 section.lead .slide-ref { color: #c9dce8; }
 ;" data-marpit-pagination-total="38" data-size="16:9">
 <h2 id="%E4%B8%BB%E7%A8%8B%E5%BC%8F%E8%88%87%E5%81%9C%E6%AD%A2%E6%A2%9D%E4%BB%B6">主程式與停止條件</h2>
-<p class="slide-ref" data-slide="22">對應程式：<code>starter/MissionLog.java</code></p>
+<p class="slide-ref" data-slide="22">對應程式：<code>starter/MissionLog.MissionLog.java</code></p>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-java"><span class="hljs-type">int</span>[] <span class="hljs-variable">script</span> <span class="hljs-operator">=</span> {<span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>};
 runMission(script, <span class="hljs-number">20</span>, <span class="hljs-number">0</span>);
 </code></pre>
@@ -2127,7 +2127,7 @@ section .slide-ref code { font-size: inherit; background: none; padding: 0; }
 section.lead .slide-ref { color: #c9dce8; }
 ;" data-marpit-pagination-total="38" data-size="16:9">
 <h2 id="%E4%BA%94%E5%80%8B-todo-%E7%9A%84%E6%93%8D%E4%BD%9C%E9%A0%86%E5%BA%8F">五個 TODO 的操作順序</h2>
-<p class="slide-ref" data-slide="23">對應程式：<code>starter/MissionLog.java</code>、<code>teacher/MissionLog.java</code></p>
+<p class="slide-ref" data-slide="23">對應程式：<code>starter/MissionLog.MissionLog.java</code>、<code>teacher/MissionLog.MissionLog.java</code></p>
 <table>
 <thead>
 <tr>
@@ -2242,7 +2242,7 @@ section .slide-ref code { font-size: inherit; background: none; padding: 0; }
 section.lead .slide-ref { color: #c9dce8; }
 ;" data-marpit-pagination-total="38" data-size="16:9">
 <h2 id="todo-2%E6%AF%8F%E4%B8%80%E6%AD%A5%E9%83%BD%E4%BF%9D%E5%AD%98">TODO 2｜每一步都保存</h2>
-<p class="slide-ref" data-slide="24">對應程式：<code>starter/MissionLog.java</code></p>
+<p class="slide-ref" data-slide="24">對應程式：<code>starter/MissionLog.MissionLog.java</code></p>
 <p>switch 執行後，同時新增：</p>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-java">commandLog.add(command);
 energyLog.add(energy);
@@ -2327,7 +2327,7 @@ section .slide-ref code { font-size: inherit; background: none; padding: 0; }
 section.lead .slide-ref { color: #c9dce8; }
 ;" data-marpit-pagination-total="38" data-size="16:9">
 <h2 id="todo-3%E7%94%A8%E7%B4%A2%E5%BC%95%E5%9B%9E%E6%94%BE">TODO 3｜用索引回放</h2>
-<p class="slide-ref" data-slide="25">對應程式：<code>starter/MissionLog.java</code></p>
+<p class="slide-ref" data-slide="25">對應程式：<code>starter/MissionLog.MissionLog.java</code></p>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-java"><span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> <span class="hljs-variable">i</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>; i &lt; commandLog.size(); i++) {
     System.out.println(<span class="hljs-string">&quot;step &quot;</span> + (i + <span class="hljs-number">1</span>)
         + <span class="hljs-string">&quot;: command=&quot;</span> + commandLog.get(i)
@@ -2412,7 +2412,7 @@ section .slide-ref code { font-size: inherit; background: none; padding: 0; }
 section.lead .slide-ref { color: #c9dce8; }
 ;" data-marpit-pagination-total="38" data-size="16:9">
 <h2 id="%E6%8C%87%E4%BB%A4%E7%AD%86%E6%95%B8%E8%88%87%E6%88%90%E5%8A%9F%E8%A1%8C%E5%8B%95%E4%B8%8D%E5%90%8C">指令筆數與成功行動不同</h2>
-<p class="slide-ref" data-slide="26">對應程式：<code>starter/MissionLog.java</code></p>
+<p class="slide-ref" data-slide="26">對應程式：<code>starter/MissionLog.MissionLog.java</code></p>
 <p>{3,9,0} 從能源 20、樣本 0 開始：</p>
 <table>
 <thead>
@@ -2522,7 +2522,7 @@ section .slide-ref code { font-size: inherit; background: none; padding: 0; }
 section.lead .slide-ref { color: #c9dce8; }
 ;" data-marpit-pagination-total="38" data-size="16:9">
 <h2 id="%E5%85%AD%E6%A2%9D%E5%BF%85%E5%81%9A%E8%B7%AF%E7%B7%9A">六條必做路線</h2>
-<p class="slide-ref" data-slide="27">對應程式：<code>starter/MissionLog.java</code></p>
+<p class="slide-ref" data-slide="27">對應程式：<code>starter/MissionLog.MissionLog.java</code></p>
 <table>
 <thead>
 <tr>
@@ -2641,7 +2641,7 @@ section .slide-ref code { font-size: inherit; background: none; padding: 0; }
 section.lead .slide-ref { color: #c9dce8; }
 ;" data-marpit-pagination-total="38" data-size="16:9">
 <h2 id="fcollections%E6%95%B4%E7%90%86%E6%95%B4%E4%BB%BD%E6%B8%85%E5%96%AE">F｜Collections：整理整份清單</h2>
-<p class="slide-ref" data-slide="28">對應程式：<code>examples/CollectionsDemo.java</code>、<code>starter/MissionLog.java</code></p>
+<p class="slide-ref" data-slide="28">對應程式：<code>examples/CollectionsDemo.java</code>、<code>starter/MissionLog.MissionLog.java</code></p>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-java">Collections.min(energyLog);
 Collections.frequency(resultLog, <span class="hljs-string">&quot;OK&quot;</span>);
 </code></pre>
@@ -2724,7 +2724,7 @@ section .slide-ref code { font-size: inherit; background: none; padding: 0; }
 section.lead .slide-ref { color: #c9dce8; }
 ;" data-marpit-pagination-total="38" data-size="16:9">
 <h2 id="todo-4%E5%AE%9A%E7%BE%A9%E6%91%98%E8%A6%81">TODO 4｜定義摘要</h2>
-<p class="slide-ref" data-slide="29">對應程式：<code>starter/MissionLog.java</code></p>
+<p class="slide-ref" data-slide="29">對應程式：<code>starter/MissionLog.MissionLog.java</code></p>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-java"><span class="hljs-type">int</span> <span class="hljs-variable">ok</span> <span class="hljs-operator">=</span> Collections.frequency(resultLog, <span class="hljs-string">&quot;OK&quot;</span>);
 <span class="hljs-type">int</span> <span class="hljs-variable">returned</span> <span class="hljs-operator">=</span> Collections.frequency(resultLog, <span class="hljs-string">&quot;RETURN&quot;</span>);
 <span class="hljs-type">int</span> <span class="hljs-variable">steps</span> <span class="hljs-operator">=</span> resultLog.size();
@@ -2809,7 +2809,7 @@ section .slide-ref code { font-size: inherit; background: none; padding: 0; }
 section.lead .slide-ref { color: #c9dce8; }
 ;" data-marpit-pagination-total="38" data-size="16:9">
 <h2 id="todo-5%E7%A9%BA%E6%B8%85%E5%96%AE%E6%B2%92%E6%9C%89%E6%9C%80%E5%B0%8F%E5%80%BC">TODO 5｜空清單沒有最小值</h2>
-<p class="slide-ref" data-slide="30">對應程式：<code>starter/MissionLog.java</code></p>
+<p class="slide-ref" data-slide="30">對應程式：<code>starter/MissionLog.MissionLog.java</code></p>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-java"><span class="hljs-keyword">if</span> (energyLog.isEmpty()) {
     System.out.println(<span class="hljs-string">&quot;lowest energy=N/A&quot;</span>);
 } <span class="hljs-keyword">else</span> {
@@ -3099,7 +3099,7 @@ section .slide-ref code { font-size: inherit; background: none; padding: 0; }
 section.lead .slide-ref { color: #c9dce8; }
 ;" data-marpit-pagination-total="38" data-size="16:9">
 <h2 id="f2%E5%85%88%E8%AA%AA%E6%B8%85%E9%9C%80%E6%B1%82%E6%89%8D%E8%83%BD%E5%88%A4%E6%96%B7-ai-%E5%BB%BA%E8%AD%B0">F2｜先說清需求，才能判斷 AI 建議</h2>
-<p class="slide-ref" data-slide="33">對應程式：<code>starter/MissionLog.java</code></p>
+<p class="slide-ref" data-slide="33">對應程式：<code>starter/MissionLog.MissionLog.java</code></p>
 <p>目的：把剛才的日誌需求寫成 Prompt，作為判斷 AI 建議的依據。</p>
 <table>
 <thead>
@@ -3305,7 +3305,7 @@ section .slide-ref code { font-size: inherit; background: none; padding: 0; }
 section.lead .slide-ref { color: #c9dce8; }
 ;" data-marpit-pagination-total="38" data-size="16:9">
 <h2 id="f3%E7%94%A8%E5%8F%8D%E4%BE%8B%E9%A9%97%E8%AD%89-ai-%E4%BF%AE%E6%94%B9%E6%98%AF%E5%90%A6%E6%AD%A3%E7%A2%BA">F3｜用反例驗證 AI 修改是否正確</h2>
-<p class="slide-ref" data-slide="35">對應程式：<code>starter/MissionLog.java</code></p>
+<p class="slide-ref" data-slide="35">對應程式：<code>starter/MissionLog.MissionLog.java</code></p>
 <p>目的：實際執行，檢查修改後是否仍符合索引與回放規則。</p>
 <table>
 <thead>
@@ -3491,7 +3491,7 @@ section .slide-ref code { font-size: inherit; background: none; padding: 0; }
 section.lead .slide-ref { color: #c9dce8; }
 ;" data-marpit-pagination-total="38" data-size="16:9">
 <h2 id="h%E4%BF%9D%E5%AD%98%E6%8E%A8%E9%80%81%E8%88%87%E7%B9%B3%E4%BA%A4">H｜保存、推送與繳交</h2>
-<p class="slide-ref" data-slide="37">對應程式：<code>starter/MissionLog.java</code></p>
+<p class="slide-ref" data-slide="37">對應程式：<code>starter/MissionLog.MissionLog.java</code></p>
 <ul>
 <li>恢復 {1,1,2}，重新編譯執行。</li>
 <li>LAB_REPORT、四欄 AI_USAGE、專案 README。</li>
@@ -3576,7 +3576,7 @@ section .slide-ref code { font-size: inherit; background: none; padding: 0; }
 section.lead .slide-ref { color: #c9dce8; }
 ;" data-marpit-pagination-total="38" data-size="16:9">
 <h2 id="%E9%81%B8%E8%AE%80%E8%88%87%E5%8F%83%E8%80%83%E7%AB%A0%E7%AF%80">選讀與參考章節</h2>
-<p class="slide-ref" data-slide="38">對應程式：<code>examples/ScriptArgs.java</code>、<code>starter/MissionLog.java</code></p>
+<p class="slide-ref" data-slide="38">對應程式：<code>examples/ScriptArgs.java</code>、<code>starter/MissionLog.MissionLog.java</code></p>
 <ul>
 <li>ScriptArgs：main 的 String[] args 與 parseInt。</li>
 <li>自訂路線：比較達標能源與成功行動次數。</li>
